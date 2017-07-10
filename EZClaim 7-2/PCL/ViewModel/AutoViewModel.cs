@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 //using System.Windows.Input;
 using System.Collections.ObjectModel;
-
+//testing version control
 namespace EZClaim
 {
     public class AutoViewModel : ViewModelBase
