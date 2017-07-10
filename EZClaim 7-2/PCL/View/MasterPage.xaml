@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+			 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+			 x:Class="EZClaim.MasterPage"
+			 Icon="hamburger.png"
+			 Title="Menu"
+             BackgroundColor="#3498db">
+	<ContentPage.Content>
+		<StackLayout VerticalOptions="FillAndExpand" >
+            <ListView x:Name="listView" VerticalOptions="FillAndExpand" SeparatorVisibility="Default" SeparatorColor="#cfd8e5" HasUnevenRows="True" >
+                <!--
+                <ListView.Header>
+                    <StackLayout Padding="20">
+                        <Label Text="Testing" YAlign="Center" TextColor="White"/>
+                    </StackLayout>
+                </ListView.Header>
+                -->
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout VerticalOptions="FillAndExpand" Orientation="Horizontal" Padding="10" Spacing="20"  HeightRequest="40">
+                                <Image HeightRequest ="32" WidthRequest="32" Source="{Binding IconSource}" />
+                                <Label Text="{Binding Title}" YAlign="Center" TextColor="White"/>
+                            </StackLayout>
+                        </ViewCell>
+					</DataTemplate>
+				</ListView.ItemTemplate>
+			</ListView>
+		</StackLayout>
+	</ContentPage.Content>
+</ContentPage>

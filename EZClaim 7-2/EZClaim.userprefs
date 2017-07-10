@@ -1,0 +1,20 @@
+﻿<Properties StartupConfiguration="{94BA3405-8AC9-47A8-90B4-59DBF2D56EF0}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="EZClaim 7-2 Status">
+    <Files>
+      <File FileName="../../../../../../Library/Frameworks/Xamarin.Android.framework/Versions/7.3.1-2/lib/xbuild/Xamarin/Android/Xamarin.Android.Common.targets" Line="876" Column="4" />
+      <File FileName="PCL/ViewModel/AutoViewModel.cs" Line="7" Column="27" />
+      <File FileName="PCL/ViewModel/HomeViewModel.cs" Line="24" Column="10" />
+      <File FileName="PCL/Model/MasterPageItem.cs" Line="12" Column="9" />
+      <File FileName="Droid/SplashScreen.cs" Line="15" Column="124" />
+      <File FileName="EZClaim 7-2 Status" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.EZClaim.Droid PreferredExecutionTarget="Android.52b0f627" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.EZClaim.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.8B48B045-CDED-4F80-BABE-BCB3A601ECC7" />
+  <MultiItemStartupConfigurations />
+</Properties>

@@ -1,0 +1,17 @@
+/Users/maazhaque/Desktop/Dev/EZClaim/EZClaim 7-2/PCL/bin/Debug/EZClaim.dll
+/Users/maazhaque/Desktop/Dev/EZClaim/EZClaim 7-2/PCL/bin/Debug/EZClaim.pdb
+/Users/maazhaque/Desktop/Dev/EZClaim/EZClaim 7-2/PCL/obj/Debug/EZClaim.csproj.CoreCompileInputs.cache
+/Users/maazhaque/Desktop/Dev/EZClaim/EZClaim 7-2/PCL/obj/Debug/EZClaim.View.MainPage.xaml.g.cs
+/Users/maazhaque/Desktop/Dev/EZClaim/EZClaim 7-2/PCL/obj/Debug/EZClaim.View.MasterPage.xaml.g.cs
+/Users/maazhaque/Desktop/Dev/EZClaim/EZClaim 7-2/PCL/obj/Debug/EZClaim.View.SettingsPage.xaml.g.cs
+/Users/maazhaque/Desktop/Dev/EZClaim/EZClaim 7-2/PCL/obj/Debug/EZClaim.View.HomePage.xaml.g.cs
+/Users/maazhaque/Desktop/Dev/EZClaim/EZClaim 7-2/PCL/obj/Debug/EZClaim.View.AdvicePage.xaml.g.cs
+/Users/maazhaque/Desktop/Dev/EZClaim/EZClaim 7-2/PCL/obj/Debug/EZClaim.View.ContactPage.xaml.g.cs
+/Users/maazhaque/Desktop/Dev/EZClaim/EZClaim 7-2/PCL/obj/Debug/EZClaim.View.CallAgentPage.xaml.g.cs
+/Users/maazhaque/Desktop/Dev/EZClaim/EZClaim 7-2/PCL/obj/Debug/EZClaim.View.CreateAccountPage.xaml.g.cs
+/Users/maazhaque/Desktop/Dev/EZClaim/EZClaim 7-2/PCL/obj/Debug/EZClaim.View.LoginPage.xaml.g.cs
+/Users/maazhaque/Desktop/Dev/EZClaim/EZClaim 7-2/PCL/obj/Debug/EZClaim.View.AutoPage.xaml.g.cs
+/Users/maazhaque/Desktop/Dev/EZClaim/EZClaim 7-2/PCL/obj/Debug/EZClaim.View.AutoListPage.xaml.g.cs
+/Users/maazhaque/Desktop/Dev/EZClaim/EZClaim 7-2/PCL/obj/Debug/EZClaim.View.HomeListPage.xaml.g.cs
+/Users/maazhaque/Desktop/Dev/EZClaim/EZClaim 7-2/PCL/obj/Debug/EZClaim.dll
+/Users/maazhaque/Desktop/Dev/EZClaim/EZClaim 7-2/PCL/obj/Debug/EZClaim.pdb

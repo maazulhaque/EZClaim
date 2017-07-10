@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+			 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+			 x:Class="EZClaim.HomePage"
+             xmlns:viewModels="clr-namespace:EZClaim; assembly= EZClaim"
+			 Title="Home Information"
+             BackgroundColor="#f2f2f2">
+
+    <ContentPage.BindingContext>
+        <viewModels:HomeViewModel/>
+    </ContentPage.BindingContext>
+
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Spacing="10" Padding="10" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" >
+                
+                    <Label Text="INSURANCE COMPANY" TextColor="Black" HorizontalOptions="Start" VerticalOptions="Center"  />
+                    <Entry HorizontalOptions="FillAndExpand" Text="{Binding InsuranceCompany, Mode=TwoWay}" TextColor="Black" BackgroundColor="White" />
+                
+                    <Label Text="POLICY NUMBER" TextColor="Black" HorizontalOptions="Start" VerticalOptions="Center" WidthRequest="120" />
+                    <Entry HorizontalOptions="FillAndExpand" Text="{Binding PolicyNumber, Mode=TwoWay}" TextColor="Black" BackgroundColor="White" />
+          
+                    <Label Text="HOME ADDRESS" TextColor="Black" HorizontalOptions="Start" VerticalOptions="Center" WidthRequest="120" />
+                    <Entry HorizontalOptions="FillAndExpand" Text="{Binding Address, Mode=TwoWay}" TextColor="Black" BackgroundColor="White" />
+    
+                    <Label Text="CITY" TextColor="Black" HorizontalOptions="Start" VerticalOptions="Center" WidthRequest="120" />
+                    <Entry HorizontalOptions="FillAndExpand" Text="{Binding City, Mode=TwoWay}" TextColor="Black" BackgroundColor="White" />
+
+                    <Label Text="POSTAL CODE" TextColor="Black" HorizontalOptions="Start" VerticalOptions="Center" WidthRequest="120" />
+                    <Entry HorizontalOptions="FillAndExpand" Text="{Binding PostalCode, Mode=TwoWay}" TextColor="Black" BackgroundColor="White" />
+
+                <!--filler-->
+                <!--<StackLayout Spacing="10" Padding="10" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" >
+                </StackLayout> -->
+                <Button HorizontalOptions="FillAndExpand" VerticalOptions="End" Clicked="Button_Clicked" Text="Save Home Information" BorderRadius="20" BackgroundColor="#3498db"/>
+                <Button HorizontalOptions="FillAndExpand" VerticalOptions="End" Clicked="Cancel_Clicked" Text="Cancel" BorderRadius="20" BackgroundColor="#3498db"/>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

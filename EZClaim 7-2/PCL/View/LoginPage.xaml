@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EZClaim.LoginPage"
+             Title="Login"
+             BackgroundColor="#f2f2f2">
+
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Spacing="10" Padding="10" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" >
+                <Label Text="Email Address" TextColor="Black" HorizontalOptions="Start" VerticalOptions="Center" WidthRequest="120" />
+                <Entry HorizontalOptions="FillAndExpand" x:Name="emailAddress" Placeholder="Email Address" TextColor="Black" BackgroundColor="White" Keyboard="Email"/>
+
+                <Label Text="Password" TextColor="Black" HorizontalOptions="Start" VerticalOptions="Center" WidthRequest="120" />
+                <Entry HorizontalOptions="FillAndExpand" x:Name="password" Placeholder="Password" IsPassword="True" TextColor="Black" BackgroundColor="White" />
+
+                <StackLayout Spacing="10" Padding="10" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" ></StackLayout>
+
+                <Button HorizontalOptions="FillAndExpand" VerticalOptions="End" Text="Login" Clicked="login_Clicked" BorderRadius="20" BackgroundColor="#3399cc"/>
+                <Button HorizontalOptions="FillAndExpand" VerticalOptions="End" Text="Create Account" Clicked="createAccount_Clicked" BorderRadius="20" BackgroundColor="#3399cc"/>
+                
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

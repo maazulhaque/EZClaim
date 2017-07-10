@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+			 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+			 x:Class="EZClaim.SettingsPage"
+			 Title="Account Settings"
+             BackgroundColor="#f2f2f2">
+    <ContentPage.Content>
+        <StackLayout Spacing="10" Padding="10" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" >
+
+            <Label Text="First Name" TextColor="Black" HorizontalOptions="Start" VerticalOptions="Center" WidthRequest="120" />
+            <Entry HorizontalOptions="FillAndExpand" x:Name="firstName" Placeholder="First Name" TextColor="Black" BackgroundColor="White" />
+
+            <Label Text="Last Name" TextColor="Black" HorizontalOptions="Start" VerticalOptions="Center" WidthRequest="120" />
+            <Entry HorizontalOptions="FillAndExpand" x:Name="lastName" Placeholder="Last Name" TextColor="Black" BackgroundColor="White" />
+
+            <Label Text="Language" TextColor="Black" HorizontalOptions="Start" VerticalOptions="Center" WidthRequest="120" />
+            <Picker Title="English"  HorizontalOptions="FillAndExpand" x:Name="language" TextColor="Black" BackgroundColor="White" >
+                <Picker.Items>
+                    <x:String>English</x:String>
+                    <x:String>French</x:String>
+                    <x:String>Mandarin Chinese</x:String>
+                </Picker.Items>
+            </Picker>
+
+            <Label Text="Email" TextColor="Black" HorizontalOptions="Start" VerticalOptions="Center" WidthRequest="120" />
+            <Entry HorizontalOptions="FillAndExpand" x:Name="email" Placeholder="Email" Keyboard="Email" TextColor="Black" BackgroundColor="White" />
+
+            <Label Text="Password" TextColor="Black" HorizontalOptions="Start" VerticalOptions="Center" WidthRequest="120" />
+            <Entry HorizontalOptions="FillAndExpand" x:Name="password" Placeholder="Password" IsPassword="True" TextColor="Black" BackgroundColor="White" />
+
+            <Label Text="Re-enter Password" TextColor="Black" HorizontalOptions="Start" VerticalOptions="Center" WidthRequest="120" />
+            <Entry HorizontalOptions="FillAndExpand" x:Name="reEnterPassword" Placeholder="Re-enter Password" IsPassword="True" TextColor="Black" BackgroundColor="White" />
+            
+            <StackLayout Spacing="10" Padding="10" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" >
+            </StackLayout>
+            
+            <Button HorizontalOptions="FillAndExpand" VerticalOptions="End" Text="Update" Clicked="updateAccount_Clicked" BorderRadius="20"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

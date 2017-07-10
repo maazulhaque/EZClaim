@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+			 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewModels="clr-namespace:EZClaim.ViewModel; assembly= EZClaim"
+			 x:Class="EZClaim.CallAgentPage"
+			 Title="Notify Agent"
+             BackgroundColor="White">
+    <ContentPage.BindingContext>
+        <viewModels:NotifyAgentViewModel/>
+    </ContentPage.BindingContext>
+
+    <!--<ContentPage.-->
+    
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="Center" HorizontalOptions="Center" >
+            <Image Source="phonecall.png" x:Name="imgNotifyAgentAuto" >
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="NotifyAuto_Tapped"/>
+                </Image.GestureRecognizers>
+            </Image>
+            <Label x:Name="lblNotifyAutoAgent"  Text="{Binding NotifyAutoAgent}" TextColor="#3498db" />
+
+            <Image Source="transparent.png" HeightRequest="100"/>
+
+            <Image Source="phonecall.png" x:Name="imgNotifyAgentHome" >
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="NotifyHome_Tapped"/>
+                </Image.GestureRecognizers>
+            </Image>
+            <Label x:Name="lblNotifyHomeAgent" Text="{Binding NotifyHomeAgent}" TextColor="#3498db"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

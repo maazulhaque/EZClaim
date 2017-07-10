@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EZClaim.CreateAccountPage"
+             Title="Create Account"
+             BackgroundColor="#f2f2f2">
+
+    <ContentPage.Content>
+        <StackLayout Spacing="10" Padding="10" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" >
+
+            <Label Text="First Name" TextColor="Black" HorizontalOptions="Start" VerticalOptions="Center" WidthRequest="120" />
+            <Entry HorizontalOptions="FillAndExpand" x:Name="firstName" Placeholder="First Name" TextColor="Black" BackgroundColor="White" />
+
+            <Label Text="Last Name" TextColor="Black" HorizontalOptions="Start" VerticalOptions="Center" WidthRequest="120" />
+            <Entry HorizontalOptions="FillAndExpand" x:Name="lastName" Placeholder="Last Name" TextColor="Black" BackgroundColor="White" />
+
+            <Label Text="Email" TextColor="Black" HorizontalOptions="Start" VerticalOptions="Center" WidthRequest="120" />
+            <Entry HorizontalOptions="FillAndExpand" x:Name="email" Placeholder="Email" Keyboard="Email" TextColor="Black" BackgroundColor="White" />
+
+            <Label Text="Password" TextColor="Black" HorizontalOptions="Start" VerticalOptions="Center" WidthRequest="120" />
+            <Entry HorizontalOptions="FillAndExpand" x:Name="password" Placeholder="Password" IsPassword="True" TextColor="Black" BackgroundColor="White" />
+
+            <Label Text="Re-enter Password" TextColor="Black" HorizontalOptions="Start" VerticalOptions="Center" WidthRequest="120" />
+            <Entry HorizontalOptions="FillAndExpand" x:Name="reEnterPassword" Placeholder="Re-enter Password" IsPassword="True" TextColor="Black" BackgroundColor="White" />
+
+            <StackLayout Spacing="10" Padding="10" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" ></StackLayout>
+
+            <Button HorizontalOptions="FillAndExpand" VerticalOptions="End" Text="Create Account" Clicked="createAccount_Clicked" BorderRadius="20" BackgroundColor="#3399cc"/>
+            <Button HorizontalOptions="FillAndExpand" VerticalOptions="End" Text="Cancel" Clicked="cancel_Clicked" BorderRadius="20" BackgroundColor="#3399cc"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

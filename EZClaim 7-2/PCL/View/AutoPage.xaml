@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewModel="clr-namespace:EZClaim; assembly= EZClaim"
+             x:Class="EZClaim.AutoPage"
+             Title="Automobile Information"
+             BackgroundColor="#f2f2f2">
+    <ContentPage.BindingContext>
+        <viewModel:AutoViewModel/>
+    </ContentPage.BindingContext>
+
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Spacing="10" Padding="10" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" >
+
+                <Label Text="YEAR" TextColor="Black" HorizontalOptions="Start" VerticalOptions="Center" WidthRequest="120" />
+                <Entry HorizontalOptions="FillAndExpand" Text="{Binding Year, Mode=TwoWay}" Keyboard="Numeric" TextColor="Black" BackgroundColor="White" />
+
+                <Label Text="MAKE" TextColor="Black" HorizontalOptions="Start" VerticalOptions="Center" />
+                <Entry HorizontalOptions="FillAndExpand" Text="{Binding Make, Mode=TwoWay}" TextColor="Black" BackgroundColor="White" />
+
+                <Label Text="MODEL" TextColor="Black" HorizontalOptions="Start" VerticalOptions="Center" />
+                <Entry HorizontalOptions="FillAndExpand" Text="{Binding Model, Mode=TwoWay}" TextColor="Black" BackgroundColor="White" />
+
+                <Label Text="VEHICLE" TextColor="Black" HorizontalOptions="Start" VerticalOptions="Center" WidthRequest="120" />
+                <Entry HorizontalOptions="FillAndExpand" Text="{Binding Vehicle, Mode=TwoWay}" TextColor="Black" BackgroundColor="White" />
+
+                <Label Text="LICENSE PLATE" TextColor="Black" HorizontalOptions="Start" VerticalOptions="Center" WidthRequest="120" />
+                <Entry HorizontalOptions="FillAndExpand" Text="{Binding LicensePlate, Mode=TwoWay}" TextColor="Black" BackgroundColor="White" />
+
+                <Label Text="INSURANCE COMPANY" TextColor="Black" HorizontalOptions="Start" VerticalOptions="Center"  />
+                <Entry HorizontalOptions="FillAndExpand" Text="{Binding InsuranceCompany, Mode=TwoWay}" TextColor="Black" BackgroundColor="White" />
+
+                <Label Text="POLICY NUMBER" TextColor="Black" HorizontalOptions="Start" VerticalOptions="Center" WidthRequest="120" />
+                <Entry HorizontalOptions="FillAndExpand" Text="{Binding PolicyNumber, Mode=TwoWay}" TextColor="Black" BackgroundColor="White" />
+
+                <Label Text="VIN (OPTIONAL)" TextColor="Black" HorizontalOptions="Start" VerticalOptions="Center" WidthRequest="120" />
+                <Entry HorizontalOptions="FillAndExpand" Text="{Binding VIN, Mode=TwoWay}" TextColor="Black" BackgroundColor="White" />
+
+                <!--filler -->
+                <StackLayout Spacing="10" Padding="10" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" ></StackLayout>
+                
+                <Button HorizontalOptions="FillAndExpand" VerticalOptions="End" Clicked="Button_Clicked" Text="Save Vehicle Information" BorderRadius="20" BackgroundColor="#3498db"/>
+                <Button HorizontalOptions="FillAndExpand" VerticalOptions="End" Clicked="Cancel_Clicked" Text="Cancel" BorderRadius="20" BackgroundColor="#3498db"/>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
